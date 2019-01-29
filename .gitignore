@@ -1,0 +1,7 @@
+$ cat .gitignore
+#Temp Dateien
+*~
+
+#zu ignorierende Ordner
+DesignBsp/
+Test*/
