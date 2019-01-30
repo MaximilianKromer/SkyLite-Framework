@@ -83,6 +83,18 @@ i {
   }
 }
 
+.content {
+  margin-top: -16px;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s linear;
+}
+
+.content p {
+    padding: 10px 18px;
+}
+
 .btn p {
   text-align: right;
   display: inline;
@@ -134,12 +146,12 @@ i {
   float: right;
 }
 
-#footer {
+footer {
   border-top: 1px solid black;
   background: white;
 }
 
-#footer a {
+footer a {
   text-align: center;
 	display: block;
 	width: 33.33%;
@@ -163,7 +175,7 @@ i {
  	margin-right: auto; 
  }
 
-#header {
+header {
   z-index: 1;
   padding: 10px;
   background-color: #546E7A;
@@ -372,19 +384,9 @@ table, th, td {
   z-index: 5;
   cursor: pointer;
 }
-  
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
 
 /* The side navigation menu */
-.sidenav {
+#sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -398,7 +400,7 @@ table, th, td {
 }
   
 /* The navigation menu links */
-.sidenav a {
+#sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 2.4rem;
@@ -408,12 +410,12 @@ table, th, td {
  }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+#sidenav a:hover, #sidenav i:hover {
   color: #546e7a;
 }
   
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+#sidenav .closebtn {
   position: absolute;
   top: 10px;
   right: 25px;
@@ -421,6 +423,6 @@ table, th, td {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  #sidenav {padding-top: 15px;}
+  #sidenav a {font-size: 18px;}
 }

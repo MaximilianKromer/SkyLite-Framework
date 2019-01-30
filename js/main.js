@@ -22,12 +22,12 @@ for (i = 0; i < coll.length; i++) {
 
 /* Set the width of the side navigation and add a black overlay */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "270px";
+  document.getElementById("sidenav").style.width = "270px";
   document.getElementById("overlay").style.display = "block";
 }
   
 /* Set the width of the side navigation and remove the black overlay */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("sidenav").style.width = "0";
   document.getElementById("overlay").style.display = "none";
 }
