@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Demo Files updated.
 - Footer & Header changed from ID to HTML Properties.
+- Shorted CSS
 
 ### Removed
 - Removed FontAwesome CSS File

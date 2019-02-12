@@ -41,10 +41,6 @@ div {
 	display: block;
 }
 
-body {
-  margin: 0%;
-}
-
 i {
   color: white;
   display: inline;
@@ -163,7 +159,7 @@ footer a {
   background: white;
 }
 
-/* MD - Align */
+/* Align */
 .left-align { text-align: left; }
 .right-align { text-align: right; }
 .center-align { text-align: center; }
