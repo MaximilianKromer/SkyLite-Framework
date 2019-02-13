@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed CHANGELOG.md
 - Updated Demo Files to new usage.
 - Updated Javascript to new usage.
+- Values of z-index.
 
 ## [v0.1.1] - 2019-01-29
 ### Added
