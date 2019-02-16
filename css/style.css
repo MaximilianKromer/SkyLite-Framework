@@ -53,13 +53,6 @@ i {
   font-size: 36px;
 }
 
-.infor {
-  color: black;
-  float: right;
-  margin-top: -21px;
-  font-size: 18px;
-}
-
 .spinner::before {
   content: "";
   position: absolute;
@@ -85,15 +78,18 @@ i {
   }
 }
 
-.content {
-  margin-top: -16px;
-  padding: 0;
-  max-height: 0;
+/* Will be fixed in future updates
+.expand {
+  margin-bottom: 0 !important;
+}
+*/
+
+.add {
+  display: none;
   overflow: hidden;
-  transition: max-height 0.2s linear;
 }
 
-.content p {
+.add p {
     padding: 10px 18px;
 }
 
@@ -107,8 +103,16 @@ i {
   margin-bottom: 12px;
 }
 
+/* iCard */
+
 .icard {
   min-height: 64px;
+}
+
+.icard .fas {
+  padding-left: 6px;
+  color: black;
+  font-size: 18px;
 }
 
 .icard .icon {
@@ -130,18 +134,25 @@ i {
   font-weight: bold;
 }
 
-.icard .text .info {
+.icard .text .head {
   font-weight: bold;
   font-size: 18px;
 }
 
-.icard .text .ltext {
+.icard .text .head-right {
+  color: black;
+  float: right;
+  margin-top: -21px;
+  font-size: 18px;
+}
+
+.icard .text .sub {
   font-size: 18px;
   padding-top: 8px;
   margin-bottom: -2px; 
 }
 
-.icard .text .rtext {
+.icard .text .sub-right {
   margin-top: -19px; 
   font-size: 18px;
   float: right;
@@ -363,6 +374,7 @@ table, th, td {
 /* Nvigation */
 
 #overlay {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;

@@ -1,20 +1,22 @@
 
+
+/* Used for expandable Content */
 var coll = document.getElementsByClassName("expand");
-var others = document.getElementsByClassName("content");
+var others = document.getElementsByClassName("add");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
+    if (content.style.display == 'block'){
+      content.style.display = "none";
     } else {
       var n;
       for (n = 0; n < others.length; n++) {
-        others[n].style.maxHeight = null;
+        others[n].style.display = "none";
       }
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.display = "block";
     } 
   });
 }
