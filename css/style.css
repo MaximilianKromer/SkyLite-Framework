@@ -17,15 +17,15 @@ p, a, h1, h2, h3, h4, h5, h6, div {
 
 .backc-black { background: #000000; }
 
-.backc-grey, body { background: #E3E3E3; }
+.backc-grey, body, form input, form select { background: #E3E3E3; }
 
 .backc-primary { background: #546e7a; }
 
 .backc-primary-light, .btn-large, .btn-small, .btn-floating, .active { background: #819ca9; }
 
-.backc-primary-dark, .btn { background: #29434e; }
+.backc-primary-dark, .btn, form input[type=submit] { background: #29434e; }
 
-.color-white, .btn, .btn-large, .btn-small, .btn-floating { color: #FFFFFF; }
+.color-white, .btn, .btn-large, .btn-small, .btn-floating, form input[type=submit] { color: #FFFFFF; }
 
 .color-black { color: #000000; }
 
@@ -53,7 +53,7 @@ i {
   font-size: 36px;
 }
 
-.spinner::before {
+.spinner::before, .fullspinner::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -69,6 +69,10 @@ i {
 }
 
 .spinner {
+  height: 120px;
+}
+
+.fullspinner {
   height: 90vh;
 }
 
@@ -97,6 +101,7 @@ i {
   display: inline;
 }
 
+/* Kategorien Unterteiler */
 .cat {
   padding-inline-start: 4px;
   border-bottom: 1px solid black;
@@ -175,10 +180,15 @@ footer a {
   background: white;
 }
 
+.topic {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
 /* Align */
 .left-align { text-align: left; }
 .right-align { text-align: right; }
-.center-align { text-align: center; }
+.center-align, .topic { text-align: center; }
 
 .left { float: left !important; }
 .right { float: right !important; }
@@ -217,7 +227,7 @@ header {
   font-size: 13px;
 }
 
-.btn, .btn-large, .btn-small {
+.btn, .btn-large, .btn-small, form input[type=submit] {
   text-decoration: none;
   text-align: center;
   letter-spacing: .5px;
@@ -262,12 +272,12 @@ header {
   cursor: default;
 }
 
-.btn, .btn-large, .btn-small, .btn-floating, .btn-flat {
+.btn, .btn-large, .btn-small, .btn-floating, .btn-flat, form input[type=submit] {
   font-size: 14px;
   outline: 0;
 }
 
-.btn, .btn-large, .btn-small, .btn-flat {
+.btn, .btn-large, .btn-small, .btn-flat, form input[type=submit] {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -318,7 +328,7 @@ table, th, td {
   box-shadow: none !important;
 }
 
-.depth-1, .card, .icard, .toast, .btn, .btn-large, .btn-small, .btn-floating, #header {
+.depth-1, .card, .icard, .toast, .btn, .btn-large, .btn-small, .btn-floating, #header, form input[type=submit] {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
             0 3px 1px -2px rgba(0,0,0,0.12), 
             0 1px 5px 0 rgba(0,0,0,0.2);
@@ -370,6 +380,57 @@ table, th, td {
         0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+/* Msg Box */
+
+.error {
+  box-shadow: 0 0 10px 0px #e53935;
+  color: #ab000d;
+}
+
+.warning {
+  box-shadow: 0 0 10px 0px #f98b00;
+  color: #c05d00;
+}
+
+.success {
+  box-shadow: 0 0 10px 0px #43a047;
+  color: #00701a;
+}
+
+/* Forms */
+
+form label {
+  display: block;
+  margin: 6px 0px;
+}
+
+form input {
+  display: block;
+  padding: 4px 8px 2px;
+  margin: 12px 6px;
+  border: none;
+  border-bottom: 2px solid #29434e;
+  border-radius: 3px;
+}
+
+form input:focus {
+  outline: none;
+  border: 2px solid #819ca9;
+}
+
+form select {
+  display: block;
+  padding: 4px 8px 2px;
+  margin: 12px 6px;
+  border: none;
+  border-bottom: 2px solid #29434e;
+  border-radius: 3px;
+}
+
+form select:focus {
+  outline: none;
+  border: 2px solid #819ca9;
+}
 
 /* Nvigation */
 
@@ -415,7 +476,7 @@ table, th, td {
 }
   
 /* Position and style the close button (top right corner) */
-#sidenav .closebtn {
+#sidenav #closebtn {
   position: absolute;
   top: 10px;
   right: 25px;

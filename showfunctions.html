@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="btn right">Button</a>
+        <i class="fas fa-bars" onclick="openNav()"></i>
+    </header>
+
+    <!-- Content Area -->
+    <div id="main">
+
+        <div class="card topic">
+            <h1>Topic</h1>
+            <h3>Subtopic</h3>
+        </div>
+
+        <div class="card spinner"></div>
+
+        <div class="card">
+            <h3>CARD</h3>
+        </div>
+
+        <div class="card" hoverable>
+            <h3>CARD hoverable</h3>
+        </div>
+
+        <div class="cat">Beispiele</div>
+
+        <div class="icard expand">
+            <div class="icon" style="background-color: yellow">
+                <p>Eng</p>
+            </div>
+            <div class="text">
+                <p class="head">3. Unterricht</p>
+                <p class="head-right"><i class="fas fa-home"></i><i class="fas fa-pen"></i></p>
+                <p class="sub">Hier klicken</p>
+                <p class="sub-right">B327</p>
+            </div>
+        </div>
+        <div class="add card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt <br> labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="card">
+            <form action="">
+                <label for="username">Benutzername:</label>
+                <input type="text" id="username">
+
+                <label for="school">Schule:</label>
+                <select name="school" id="school">
+                    <option value="EGN66" selected>Einstein-Gymnasium Neuenhagen</option>
+                    <option value="DEMO0">Demo Schule</option>
+                </select>
+
+                <label for="password">Passwort:</label>
+                <input type="password" name="password" id="password">
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
+
+        <div class="card success">
+            SUCCESS: Erfolgreich...
+        </div>
+
+        <div class="card warning">
+            WARNING: Warnung...
+        </div>
+
+        <div class="card error">
+            ERROR: Fehler...
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </footer> 
+
+    <!-- Sidenav -->
+    <div id="overlay" onclick="closeNav()"></div>
+    <div id="sidenav">
+        <i class="fas fa-times" id="closebtn" onclick="closeNav()"></i>
+        <a href="#">Site</a>
+        <a href="#">Site</a>
+        <a href="#">Site</a>
+        <a href="#">Site</a>
+    </div>
+
+    <!-- Back 2 Top Button -->
+	<div class="fixed-action-btn">
+        <a href="#top" class="btn-floating"><i class="fas fa-angle-up" style=" margin-left: 22%; margin-top: 3%"></i></a>
+    </div>
+    
+</body>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+</html>

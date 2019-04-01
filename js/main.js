@@ -1,18 +1,17 @@
 
-
 /* Used for expandable Content */
-var coll = document.getElementsByClassName("expand");
-var others = document.getElementsByClassName("add");
-var i;
+const coll = document.getElementsByClassName("expand");
+const others = document.getElementsByClassName("add");
+let i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
+    let content = this.nextElementSibling;
     if (content.style.display == 'block'){
       content.style.display = "none";
     } else {
-      var n;
+      let n;
       for (n = 0; n < others.length; n++) {
         others[n].style.display = "none";
       }

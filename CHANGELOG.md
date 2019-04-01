@@ -6,6 +6,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.3.0] - 2019-04-01
+### Added
+- showfunctions.html to see all basic elements
+- fullspinner and smaller spinner
+- CSS form input styling
+- CSS form select styling
+- CSS form submit styling
+- CSS form label styling
+- new CSS class topic for card styling
+- new CSS class succes for card styling
+- new CSS class warning for card styling
+- new CSS class error for card styling
+
+### Changed
+- little javascript changes
+- change CSS closebtn class to id
+
+### Fixed
+- plain.html fullspinner
+
 ## [v0.2.0] - 2019-02-16
 ### Added
 - Content of README.md
