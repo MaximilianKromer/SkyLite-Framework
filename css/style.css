@@ -47,7 +47,12 @@ a {
   color: white;
 }
 
-i {
+p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+i.fas {
   color: white;
   display: inline;
   font-size: 36px;
@@ -72,7 +77,7 @@ i {
   height: 120px;
 }
 
-.fullspinner {
+.fullspinner, [class*="full"] {
   height: 90vh;
 }
 
@@ -416,6 +421,21 @@ form input {
 form input:focus {
   outline: none;
   border: 2px solid #819ca9;
+}
+
+form input[type=checkbox] {
+  display: inline;
+  border: 2px solid #29434e;
+}
+
+form input[type=checkbox] + p {
+  display: inline;
+}
+
+form input[type=submit],  input[type=reset] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 form select {
