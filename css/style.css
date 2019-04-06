@@ -304,6 +304,7 @@ header {
 }
 
 .card, .icard {
+  display: block;
   position: relative;
   margin: .5rem 0 1rem 0;
   background-color: #fff;
@@ -378,7 +379,7 @@ table, th, td {
         0 11px 15px -7px rgba(0,0,0,0.2);
 }
 
-[hoverable]:hover {
+[hoverable]:hover, a.card:hover {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 
             0 6px 20px 0 rgba(0,0,0,0.19);
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 
